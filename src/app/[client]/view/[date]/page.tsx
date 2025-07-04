@@ -51,7 +51,7 @@ export default async function ChroniclePage({ params }: { params: { client: stri
                       <table width="400" cellSpacing="0" cellPadding="0" style={{ margin: '0 auto' }}>
                         <tbody>
                           <tr>
-                            <td><img width="200" src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/bBHs/200X48/bea_logo_1.jpg" alt="logo1" /></td>
+                            <td><img width="150" src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/bBHs/200X48/bea_logo_1.jpg" alt="logo1" /></td>
                           </tr>
                           <tr>
                             <td>
