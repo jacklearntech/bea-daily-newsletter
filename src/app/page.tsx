@@ -20,7 +20,7 @@ export default function Home() {
         </header>
         <main className="z-10">
           <Button asChild size="lg" className="font-headline text-lg">
-            <Link href="/view/2024-08-15">
+            <Link href="/view/2025-07-04">
               Read The Latest Chronicle
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

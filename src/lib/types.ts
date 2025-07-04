@@ -8,19 +8,23 @@ export type Article = {
   source_name: string;
   publish_date: string;
   snippet: string;
+  sentiment: string;
 };
 
 export type Content = {
   category_name: string;
+  category_id: string;
   articles: Article[];
 };
 
 export type Chronicle = {
   date: string;
   positive: number;
+  neutral: number;
   negative: number;
   health: string;
   bea_pick: string;
+  ai_summary: string;
   bank_keyword: string;
   ai_ask: string;
   ai_answer: string;
