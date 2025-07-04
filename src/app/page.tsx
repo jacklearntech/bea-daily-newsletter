@@ -18,10 +18,16 @@ export default function Home() {
             stories with a clean and focused reading interface.
           </p>
         </header>
-        <main className="z-10">
+        <main className="z-10 flex flex-col sm:flex-row gap-4">
           <Button asChild size="lg" className="font-headline text-lg">
-            <Link href="/view/2025-07-04">
-              Read The Latest Chronicle
+            <Link href="/view/2025-07-04-simp">
+              Read in Simplified Chinese
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+          <Button asChild size="lg" className="font-headline text-lg">
+            <Link href="/view/2025-07-04-trad">
+              Read in Traditional Chinese
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
