@@ -10,6 +10,7 @@ export type Article = {
   snippet: string;
   sentiment: string;
   type: string;
+  content: string;
 };
 
 export type Content = {
