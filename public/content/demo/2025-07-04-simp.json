@@ -1,0 +1,45 @@
+{
+		"date": "2025-07-04 星期五 (Demo)",
+		"positive": 5,
+		"neutral": 0,
+		"negative": 0,
+		"health": "健康",
+		"bea_pick": "中國AI突圍？美科技巨頭向全球用戶提供DeepSeek",
+		"ai_summary": "東亞銀行在按揭、跨境支付、APP熱度排名中表現活躍，非執董減持股份，三井住友金融持股近20%，位列香港十大盈利銀行之一。",
+		"bank_keyword": "AI崛起、外資布局、金融合作",
+		"ai_ask": "東亞銀行在按揭市場的表現如何",
+		"ai_answer": "東亞銀行H按利率為H+1.3%，市占率4.6%，排名香港第五，顯示其在按揭市場具備競爭力",
+		"contents": [
+			{
+				"category_name": "東亞銀行",
+				"category_id": "bea_news",
+				"articles": [
+
+					{
+						"id": 1,
+						"publish_date": "2025-07-03",
+						"link": "https://m.163.com/news/article/K3IAIJ3V05198SGG.html",
+						"sentiment": "neutral",
+						"title": "2025年上半年上市銀行APP熱度排行",
+						"snippet": "外資法人銀行：6家外資法人上市銀行中，匯豐銀行、渣打銀行（中國）、<b>東亞</b>銀行排名前三。",
+						"source_name": "網易"
+					}
+				]
+			},
+			{
+				"category_name": "銀行業動態 (Demo)",
+				"category_id": "bank_news",
+				"articles": [
+					{
+						"id": 1,
+						"publish_date": "2025-07-04",
+						"link": "https://m.cls.cn/detail/2075724",
+						"sentiment": "neutral",
+						"title": "摩根大通大幅下調穩定幣增長預測：2028年市場規模僅為5000億美元",
+						"snippet": "財聯社7月4日訊（編輯 夏軍雄）摩根大通周四預測，到2028年，穩定幣的市場規模僅會增長至5000億美元。該銀行稱其此前增長至1萬億美元的預測過於樂觀，原因是目前幾乎沒有跡象表明美元掛鉤的加密貨幣代幣",
+						"source_name": "cls.cn"
+					}
+				]
+			}
+		]
+	}
