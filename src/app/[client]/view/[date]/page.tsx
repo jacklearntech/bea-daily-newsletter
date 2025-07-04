@@ -131,7 +131,7 @@ export default async function ChroniclePage({ params }: { params: { client: stri
                       <div key={article.id} style={{ paddingBottom: '10px', paddingLeft: '20px', paddingTop: '10px', fontSize: '16px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'normal' }}>
                         <span><a id={article.type}></a><a style={{ fontFamily: 'arial', fontSize: '16px', color: '#333', textDecoration: 'none' }} href={article.link}>{article.id}. <span dangerouslySetInnerHTML={{ __html: article.title }} /></a></span><br />
                         <span style={{ fontSize: '16px', color: '#333', fontFamily: 'arial', fontWeight: 'normal' }}>媒体：{article.source_name} </span>    <span> &nbsp;&nbsp;&nbsp;{article.publish_date}</span><br />
-                        <span style={{ fontSize: '16px', color: '#333', fontFamily: 'arial', fontWeight: 'normal' }} dangerouslySetInnerHTML={{ __html: article.snippet + "<br /><br />" }} />
+                        <span style={{ fontSize: '16px', color: '#333', fontFamily: 'arial', fontWeight: 'normal' }} dangerouslySetInnerHTML={{ __html: article.content + "<br /><br />" }} />
                       </div>
                     ))
                   ) : (
