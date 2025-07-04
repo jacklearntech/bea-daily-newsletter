@@ -61,7 +61,7 @@ export default async function ChroniclePage({ params }: { params: { date: string
                             </td>
                           </tr>
                           <tr>
-                            <td><img width="450" src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/HDB2/200X44/bea_logo_left.jpg" alt="logo left" /></td>
+                            <td><img width="200" src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/HDB2/200X44/bea_logo_left.jpg" alt="logo left" /></td>
                           </tr>
                         </tbody>
                       </table>
