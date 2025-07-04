@@ -1,41 +1,29 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Feather } from "lucide-react";
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-background text-center p-4 overflow-hidden">
-      <div className="relative w-full max-w-5xl flex flex-col items-center justify-center">
-        <header className="z-10">
-          <div className="inline-flex items-center justify-center bg-primary/10 text-primary p-3 rounded-full mb-6">
-            <Feather className="h-8 w-8" />
-          </div>
-          <h1 className="font-headline text-5xl md:text-7xl font-bold text-foreground mb-4">
-            Chronicle Quill
-          </h1>
-          <p className="font-body text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            Your daily digest, beautifully rendered. Experience news and
-            stories with a clean and focused reading interface.
-          </p>
-        </header>
-        <main className="z-10 flex flex-col sm:flex-row gap-4">
-          <Button asChild size="lg" className="font-headline text-lg">
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-6xl">
+          Chronicle Quill
+        </h1>
+        <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+          Your daily digest, beautifully rendered.
+        </p>
+        <div className="mt-10 flex items-center justify-center gap-x-6">
+          <Button asChild>
             <Link href="/view/2025-07-04-simp">
-              Read in Simplified Chinese
-              <ArrowRight className="ml-2 h-5 w-5" />
+              View Chronicle (Simplified)
             </Link>
           </Button>
-          <Button asChild size="lg" className="font-headline text-lg">
+          <Button asChild variant="outline">
             <Link href="/view/2025-07-04-trad">
-              Read in Traditional Chinese
-              <ArrowRight className="ml-2 h-5 w-5" />
+               View Chronicle (Traditional)
             </Link>
           </Button>
-        </main>
-        <footer className="z-10 absolute bottom-4 text-muted-foreground text-sm">
-          <p>Powered by Next.js and thoughtful design.</p>
-        </footer>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
