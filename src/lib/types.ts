@@ -1,17 +1,30 @@
 import type { LucideProps } from 'lucide-react';
 import type { ForwardRefExoticComponent, RefAttributes } from 'react';
 
-export type Section = {
-  category: string;
-  icon: string;
+export type Article = {
+  id: number;
   title: string;
-  paragraphs: string[];
+  link: string;
+  source_name: string;
+  publish_date: string;
+  snippet: string;
+};
+
+export type Content = {
+  category_name: string;
+  articles: Article[];
 };
 
 export type Chronicle = {
-  title: string;
-  headline: string;
-  sections: Section[];
+  date: string;
+  positive: number;
+  negative: number;
+  health: string;
+  bea_pick: string;
+  bank_keyword: string;
+  ai_ask: string;
+  ai_answer: string;
+  contents: Content[];
 };
 
 export type IconMap = {
