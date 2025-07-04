@@ -9,6 +9,7 @@ export type Article = {
   publish_date: string;
   snippet: string;
   sentiment: string;
+  type: string;
 };
 
 export type Content = {
