@@ -37,17 +37,18 @@ export default async function ChroniclePage({ params }: { params: { date: string
   return (
     <>
       <style>{`
+        body { background-color: white; }
         b {color:red;font-weight:bold;}
       `}</style>
-      <table width="800" cellSpacing="0" cellPadding="0" style={{ margin: '0 auto' }}>
+      <table width="900" cellSpacing="0" cellPadding="0" style={{ margin: '0 auto' }}>
         <tbody>
           <tr>
             <td style={{ padding: '0px', fontFamily: 'Arial, sans-serif' }}>
-              <table width="800" cellSpacing="0" cellPadding="0" style={{ margin: '0 0 20px 0' }}>
+              <table width="900" cellSpacing="0" cellPadding="0" style={{ margin: '0 0 20px 0' }}>
                 <tbody>
                   <tr>
-                    <td width="400">
-                      <table width="400" cellSpacing="0" cellPadding="0" style={{ margin: '0 auto' }}>
+                    <td width="450">
+                      <table width="450" cellSpacing="0" cellPadding="0" style={{ margin: '0 auto' }}>
                         <tbody>
                           <tr>
                             <td><img width="200" src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/bBHs/200X48/bea_logo_1.jpg" alt="logo1" /></td>
@@ -60,12 +61,12 @@ export default async function ChroniclePage({ params }: { params: { date: string
                             </td>
                           </tr>
                           <tr>
-                            <td><img width="400" src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/HDB2/200X44/bea_logo_left.jpg" alt="logo left" /></td>
+                            <td><img width="450" src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/HDB2/200X44/bea_logo_left.jpg" alt="logo left" /></td>
                           </tr>
                         </tbody>
                       </table>
                     </td>
-                    <td width="400"><img width="400" src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/dOSl/400X214/bea_logo_right.jpg" alt="logo right" /></td>
+                    <td width="450"><img width="450" src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/dOSl/400X214/bea_logo_right.jpg" alt="logo right" /></td>
                   </tr>
                 </tbody>
               </table>
