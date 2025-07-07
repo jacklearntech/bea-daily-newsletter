@@ -72,53 +72,7 @@ export default async function ChroniclePage({ params }: { params: { client: stri
               </table>
             </td>
           </tr>
-          {/*全网AI舆情分析 */}
-          <tr>
-            <td>
-              <div
-                style={{ padding: '10px 20px 10px 20px', backgroundColor: '#E6EDEA', fontSize: '20px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'bold' }}>
-                📊 全网AI舆情分析</div>
-              <div style={{ padding: '10px 20px 10px 20px', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'rgb(18, 18, 18)', letterSpacing: '0.05pt', background: 'white' }}>
-                今日提及东亚银行的全网内容，共计{data.pos}条正面及中性报道（<a href="#beanews">点此查阅</a>），敏感信息{data.neg}条（<a href="#beanews">点此查阅</a>），舆情健康度为{data.health};<br />
-                值得关注的重点新闻是：{data.pick}<br />
-                整体金融行业或外资银行业今日关键词是：{data.bank_keyword}
-              </div>
-            </td>
-          </tr>
-          {/*每日AI智脑 */}
-          <tr>
-            <td>
-              <div
-                style={{ padding: '10px 20px 10px 20px', backgroundColor: '#E6EDEA', fontSize: '20px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'bold' }}>
-                💬 每日AI智脑</div>
-              <div style={{ fontSize: '16px', color: '#3B815C', fontFamily: 'arial', padding: '10px 20px 10px 20px' }}> 问：{data.ai_ask}<br />
-                答：{data.ai_answer}
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div
-                style={{ padding: '10px 20px 10px 20px', backgroundColor: '#E6EDEA', fontSize: '20px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'bold' }}>
-                📖 目录</div>
-              <a id="beanews"></a>
-              {data.contents?.map((content, index) => (
-                <div key={index}>
-                  <span style={{ fontSize: '13pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'rgb(51, 51, 51)', letterSpacing: '0.05pt', background: 'white' }}>{content.category_name}</span><br />
-                  {content.articles && content.articles.length > 0 ? (
-                    content.articles.map(article => (
-                      <div style={{ paddingLeft: '20px' }} key={article.id}>
-                        <span><a style={{ fontSize: '11.5pt', color: '#153EB3' }} href={article.link}>{article.id}. <span dangerouslySetInnerHTML={{ __html: article.title }} /></a></span><br />
-                      </div>
-                    ))
-                  ) : (
-                    <p>No articles found</p>
-                  )}
-                </div>
-              ))}
-            </td>
-          </tr>
-
+          
           <tr>
             <td>
               {data.contents?.map((content, index) => (
