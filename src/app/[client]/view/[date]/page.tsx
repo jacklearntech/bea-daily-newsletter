@@ -79,8 +79,8 @@ export default async function ChroniclePage({ params }: { params: { client: stri
                 style={{ padding: '10px 20px 10px 20px', backgroundColor: '#E6EDEA', fontSize: '20px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'bold' }}>
                 📊 全网AI舆情分析</div>
               <div style={{ padding: '10px 20px 10px 20px' }}>
-                今日提及东亚银行的全网内容，共计{data.positive}条正面及中性报道（<a href="#beanews">点此查阅</a>），敏感信息{data.negative}条（<a href="#beanews">点此查阅</a>），舆情健康度为{data.health};<br />
-                值得关注的重点新闻是：{data.bea_pick}<br />
+                今日提及东亚银行的全网内容，共计{data.pos}条正面及中性报道（<a href="#beanews">点此查阅</a>），敏感信息{data.neg}条（<a href="#beanews">点此查阅</a>），舆情健康度为{data.health};<br />
+                值得关注的重点新闻是：{data.pick}<br />
                 整体金融行业或外资银行业今日关键词是：{data.bank_keyword}
               </div>
             </td>

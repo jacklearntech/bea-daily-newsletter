@@ -21,11 +21,11 @@ export type Content = {
 
 export type Chronicle = {
   date: string;
-  positive: number;
-  neutral: number;
-  negative: number;
+  day: string;
+  pos: number;
+  neg: number;
   health: string;
-  bea_pick: string;
+  pick: string;
   ai_summary: string;
   bank_keyword: string;
   ai_ask: string;
