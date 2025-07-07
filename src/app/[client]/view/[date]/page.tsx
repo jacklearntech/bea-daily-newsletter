@@ -83,7 +83,7 @@ export default async function ChroniclePage({ params }: { params: { client: stri
                   {content.articles && content.articles.length > 0 ? (
                     content.articles.map(article => (
                       <div key={article.id} style={{ paddingBottom: '10px', paddingLeft: '20px', paddingTop: '10px', fontSize: '16px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'normal' }}>
-                        <span><a id={article.type}></a><a style={{ fontSize: '13pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'black', letterSpacing: '0.05pt', background: 'white' }} href={article.link}>{article.id}. <span dangerouslySetInnerHTML={{ __html: article.title }} /></a></span><br />
+                        <span><a id={article.type}></a><a style={{ fontSize: '13pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'black', letterSpacing: '0.05pt', fontWeight: 'bold', background: 'white' }} href={article.link}>{article.id}. <span dangerouslySetInnerHTML={{ __html: article.title }} /></a></span><br />
                         <span style={{ fontSize: '11.5pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'rgb(136, 136, 136)', letterSpacing: '0.05pt' }}>媒体：{article.source_name} </span>    <span style={{ fontSize: '11.5pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'rgb(136, 136, 136)', letterSpacing: '0.05pt' }}> &nbsp;&nbsp;&nbsp;{article.publish_date}</span><br />
                         <span style={{ fontSize: '11.5pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'black', letterSpacing: '0.05pt' }} dangerouslySetInnerHTML={{ __html: article.content + "<br /><br />" }} />
                       </div>
