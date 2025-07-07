@@ -57,7 +57,7 @@ export default async function ChroniclePage({ params }: { params: { client: stri
                             <td>
                               <div style={{ padding: '20px' }}><span
                                 style={{ fontSize: '40px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'bold' }}>每日AI智讯</span><br /><span
-                                  style={{ fontSize: '20px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'bold' }}>{data.date}</span></div>
+                                  style={{ fontSize: '20px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'bold' }}>{data.date} {data.day}</span></div>
                             </td>
                           </tr>
                           <tr>
