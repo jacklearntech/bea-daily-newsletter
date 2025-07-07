@@ -78,7 +78,7 @@ export default async function ChroniclePage({ params }: { params: { client: stri
               <div
                 style={{ padding: '10px 20px 10px 20px', backgroundColor: '#E6EDEA', fontSize: '20px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'bold' }}>
                 📊 全网AI舆情分析</div>
-              <div style={{ padding: '10px 20px 10px 20px' }}>
+              <div style={{ padding: '10px 20px 10px 20px', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'rgb(18, 18, 18)', letterSpacing: '0.05pt', background: 'white' }}>
                 今日提及东亚银行的全网内容，共计{data.pos}条正面及中性报道（<a href="#beanews">点此查阅</a>），敏感信息{data.neg}条（<a href="#beanews">点此查阅</a>），舆情健康度为{data.health};<br />
                 值得关注的重点新闻是：{data.pick}<br />
                 整体金融行业或外资银行业今日关键词是：{data.bank_keyword}
@@ -104,11 +104,11 @@ export default async function ChroniclePage({ params }: { params: { client: stri
               <a id="beanews"></a>
               {data.contents?.map((content, index) => (
                 <div key={index}>
-                  <span style={{ fontSize: '20px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'bold' }}>{content.category_name}</span><br />
+                  <span style={{ fontSize: '13pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'rgb(51, 51, 51)', letterSpacing: '0.05pt', background: 'white' }}>{content.category_name}</span><br />
                   {content.articles && content.articles.length > 0 ? (
                     content.articles.map(article => (
                       <div style={{ paddingLeft: '20px' }} key={article.id}>
-                        <span><a style={{ fontSize: '16px', fontFamily: 'arial', color: '#333', textDecoration: 'none' }} href={article.link}>{article.id}. <span dangerouslySetInnerHTML={{ __html: article.title }} /></a></span><br />
+                        <span><a style={{ fontSize: '11.5pt', color: '#153EB3' }} href={article.link}>{article.id}. <span dangerouslySetInnerHTML={{ __html: article.title }} /></a></span><br />
                       </div>
                     ))
                   ) : (
@@ -129,9 +129,9 @@ export default async function ChroniclePage({ params }: { params: { client: stri
                   {content.articles && content.articles.length > 0 ? (
                     content.articles.map(article => (
                       <div key={article.id} style={{ paddingBottom: '10px', paddingLeft: '20px', paddingTop: '10px', fontSize: '16px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'normal' }}>
-                        <span><a id={article.type}></a><a style={{ fontFamily: 'arial', fontSize: '16px', color: '#333', textDecoration: 'none' }} href={article.link}>{article.id}. <span dangerouslySetInnerHTML={{ __html: article.title }} /></a></span><br />
-                        <span style={{ fontSize: '16px', color: '#333', fontFamily: 'arial', fontWeight: 'normal' }}>媒体：{article.source_name} </span>    <span> &nbsp;&nbsp;&nbsp;{article.publish_date}</span><br />
-                        <span style={{ fontSize: '16px', color: '#333', fontFamily: 'arial', fontWeight: 'normal' }} dangerouslySetInnerHTML={{ __html: article.content + "<br /><br />" }} />
+                        <span><a id={article.type}></a><a style={{ fontSize: '13pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'black', letterSpacing: '0.05pt', background: 'white' }} href={article.link}>{article.id}. <span dangerouslySetInnerHTML={{ __html: article.title }} /></a></span><br />
+                        <span style={{ fontSize: '11.5pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'rgb(136, 136, 136)', letterSpacing: '0.05pt' }}>媒体：{article.source_name} </span>    <span style={{ fontSize: '11.5pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'rgb(136, 136, 136)', letterSpacing: '0.05pt' }}> &nbsp;&nbsp;&nbsp;{article.publish_date}</span><br />
+                        <span style={{ fontSize: '11.5pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'black', letterSpacing: '0.05pt' }} dangerouslySetInnerHTML={{ __html: article.content + "<br /><br />" }} />
                       </div>
                     ))
                   ) : (
