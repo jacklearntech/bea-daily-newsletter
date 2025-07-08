@@ -41,18 +41,18 @@ export default async function ChroniclePage({ params }: { params: { client: stri
         b {color:red;font-weight:bold;}
         p {text-indent: 30px;}
       `}</style>
-      <table width="800" cellSpacing="0" cellPadding="0" style={{ margin: '0 auto' }}>
+      <table width="750" cellSpacing="0" cellPadding="0" style={{ margin: '0 auto' }}>
         <tbody>
           <tr>
             <td style={{ padding: '0px', fontFamily: 'Arial, sans-serif' }}>
-              <table width="800" cellSpacing="0" cellPadding="0" style={{ margin: '0 0 20px 0' }}>
+              <table width="750" cellSpacing="0" cellPadding="0" style={{ margin: '0 0 20px 0' }}>
                 <tbody>
                   <tr>
                     <td width="400">
                       <table width="400" cellSpacing="0" cellPadding="0" style={{ margin: '0 auto' }}>
                         <tbody>
                           <tr>
-                            <td><img width="200" src="https://tc.z.wiki/autoupload/f/zOk5V5DxyRLz0_wVScIjAUBhoOnsmc5ESzPIfSGDw1Syl5f0KlZfm6UsKj-HyTuv/20250707/4uBm/200X44/bea_logo.jpg" alt="logo1" /></td>
+                            <td><img width="150" style={{ width: '150px' }} src="https://tc.z.wiki/autoupload/f/zOk5V5DxyRLz0_wVScIjAUBhoOnsmc5ESzPIfSGDw1Syl5f0KlZfm6UsKj-HyTuv/20250707/4uBm/200X44/bea_logo.jpg" alt="logo1" /></td>
                           </tr>
                           <tr>
                             <td>
@@ -67,7 +67,7 @@ export default async function ChroniclePage({ params }: { params: { client: stri
                         </tbody>
                       </table>
                     </td>
-                    <td width="400"><img width="400" src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/dOSl/400X214/bea_logo_right.jpg" alt="logo right" /></td>
+                    <td width="350"><img width="350" style={{ width:'350px' }} src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/dOSl/400X214/bea_logo_right.jpg" alt="logo right" /></td>
                   </tr>
                 </tbody>
               </table>
