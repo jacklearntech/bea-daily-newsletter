@@ -41,11 +41,11 @@ export default async function ChroniclePage({ params }: { params: { client: stri
         b {color:red;font-weight:bold;}
         p {text-indent: 30px;}
       `}</style>
-      <table width="750" cellSpacing="0" cellPadding="0" style={{ margin: '0 auto' }}>
+      <table width="800" cellSpacing="0" cellPadding="0" style={{ margin: '0 auto' }}>
         <tbody>
           <tr>
             <td style={{ padding: '0px', fontFamily: 'Arial, sans-serif' }}>
-              <table width="750" cellSpacing="0" cellPadding="0" style={{ margin: '0 0 20px 0' }}>
+              <table width="800" cellSpacing="0" cellPadding="0" style={{ margin: '0 0 20px 0' }}>
                 <tbody>
                   <tr>
                     <td width="400">
@@ -67,7 +67,7 @@ export default async function ChroniclePage({ params }: { params: { client: stri
                         </tbody>
                       </table>
                     </td>
-                    <td width="350"><img width="350" style={{ width:'350px' }} src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/dOSl/400X214/bea_logo_right.jpg" alt="logo right" /></td>
+                    <td width="400"><img width="400" style={{ width:'400px' }} src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/dOSl/400X214/bea_logo_right.jpg" alt="logo right" /></td>
                   </tr>
                 </tbody>
               </table>
@@ -82,9 +82,9 @@ export default async function ChroniclePage({ params }: { params: { client: stri
                     style={{ padding: '10px 20px 10px 20px', backgroundColor: '#E6EDEA', fontSize: '20px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'bold' }}>
                     📄 {content.category_name}</div>
                   {content.articles && content.articles.length > 0 ? (
-                    content.articles.map(article => (
-                      <div key={article.id} style={{ paddingBottom: '10px', paddingLeft: '20px', paddingTop: '10px', fontSize: '16px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'normal' }}>
-                        <span><a id={article.type}></a><a style={{ fontSize: '13pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'black', letterSpacing: '0.05pt', fontWeight: 'bold', background: 'white', lineHeight: '25px' }} href={article.link}>{article.id}. <span dangerouslySetInnerHTML={{ __html: article.title }} /></a></span><br />
+                    content.articles.map((article, articleIndex) => (
+                      <div key={article.id} style={{ paddingBottom: '10px', paddingLeft: '20px', paddingTop: '10px', fontSize: '16px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'normal', backgroundColor: articleIndex % 2 === 0 ? '#f3f4f6' : 'white' }}>
+                        <span><a id={article.type}></a><a style={{ fontSize: '13pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'black', letterSpacing: '0.05pt', fontWeight: 'bold', background: 'transparent', lineHeight: '25px' }} href={article.link}>{article.id}. <span dangerouslySetInnerHTML={{ __html: article.title }} /></a></span><br />
                         <span style={{ fontSize: '11.5pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'rgb(136, 136, 136)', letterSpacing: '0.05pt', lineHeight: '25px' }}>媒体：{article.source_name} </span>    <span style={{ fontSize: '11.5pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'rgb(136, 136, 136)', letterSpacing: '0.05pt' }}> &nbsp;&nbsp;&nbsp;{article.publish_date}</span><br />
                         <span style={{ fontSize: '11.5pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'black', letterSpacing: '0.05pt', lineHeight: '25px' }} dangerouslySetInnerHTML={{ __html: article.content + "<br />" }} />
                       </div>
