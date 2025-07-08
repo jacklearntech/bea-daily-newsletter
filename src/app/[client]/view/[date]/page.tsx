@@ -39,6 +39,7 @@ export default async function ChroniclePage({ params }: { params: { client: stri
       <style>{`
         body { background-color: white; }
         b {color:red;font-weight:bold;}
+        p {text-indent: 30px;}
       `}</style>
       <table width="800" cellSpacing="0" cellPadding="0" style={{ margin: '0 auto' }}>
         <tbody>
