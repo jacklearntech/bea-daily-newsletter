@@ -78,9 +78,11 @@ export default async function ChroniclePage({ params }: { params: { client: stri
             <td>
               {data.contents?.map((content, index) => (
                 <div key={index}>
-                  <div
+                  {content.articles && content.articles.length > 0 ? (
+                    <div
                     style={{ padding: '10px 20px 10px 20px', backgroundColor: '#E6EDEA', fontSize: '20px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'bold' }}>
-                    📄 {content.category_name}</div>
+                    📄 {content.category_name}</div>)
+                  : (<div></div>)}
                   {content.articles && content.articles.length > 0 ? (
                     content.articles.map((article, articleIndex) => (
                       <div key={article.id} style={{ paddingBottom: '10px', paddingLeft: '20px', paddingTop: '10px', fontSize: '16px', color: '#3B815C', fontFamily: 'arial', fontWeight: 'normal', backgroundColor: articleIndex % 2 === 0 ? '#f3f4f6' : 'white' }}>
@@ -89,9 +91,7 @@ export default async function ChroniclePage({ params }: { params: { client: stri
                         <span style={{ fontSize: '11.5pt', fontFamily: '微軟雅黑, serif, serif, EmojiFont', color: 'black', letterSpacing: '0.05pt', lineHeight: '25px' }} dangerouslySetInnerHTML={{ __html: article.content + "<br />" }} />
                       </div>
                     ))
-                  ) : (
-                    <p>No articles found</p>
-                  )}
+                  ) : (<div></div>)}
                 </div>
               ))}
 
