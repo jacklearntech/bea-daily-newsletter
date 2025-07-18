@@ -1,0 +1,84 @@
+<!-- 新聞通訊模版設計 -->
+<style>
+  b {color:red;font-weight:bold;}
+</style>
+<table width="750" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="padding: 0px; font-family: Arial, sans-serif;">
+      <table width="750" cellspacing="0" cellpadding="0" >
+        <tr>
+          <td width="400">
+            <table width="400" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+              <tr>
+                <td><span>&nbsp;&nbsp;</span><img width="150" style="width:150px" src="https://tc.z.wiki/autoupload/f/zOk5V5DxyRLz0_wVScIjAUBhoOnsmc5ESzPIfSGDw1Syl5f0KlZfm6UsKj-HyTuv/20250707/4uBm/200X44/bea_logo.jpg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <div><span
+                      style="font-size:40px;color:#3B815C;font-family:Noto Sans SC, 微軟雅黑, serif, EmojiFont;font-weight:bold;letter-spacing: 3pt;">&nbsp;每日AI智訊</span><br /><span
+                      style="font-size:17px;color:#3B815C;font-family:Noto Sans SC, 微軟雅黑, serif, EmojiFont;font-weight:bold;line-height:30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{date}} {{day}}</span></div>
+                </td>
+              </tr>
+              <tr>
+                <td><img width="200" style="width:200px;" src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/HDB2/200X44/bea_logo_left.jpg" /></td>
+              </tr>
+            </table>
+          </td>
+          <td width="350"><img width="350" style="width:350px;" src="https://tc.z.wiki/autoupload/MCKCBmE6ggFsxC0VziWgtKSfJ_ukFZyEsw5T-T9ae1Kyl5f0KlZfm6UsKj-HyTuv/20250630/dOSl/400X214/bea_logo_right.jpg" /></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!--全網AI輿情分析 -->
+  <tr>
+    <td>
+       <div
+        style="background-color:#E6EDEA;font-size:20px;color:#3B815C;font-family:Noto Sans SC, 微軟雅黑, serif, EmojiFont;font-weight:bold;line-height:40px;"><span>&nbsp;&nbsp;</span>📖 全網AI輿情分析</div><div style="width:100%;height:3px;"><table><tr><td height="3"></td></tr></table></div>
+
+      <div style="font-family:Noto Sans SC, 微軟雅黑, serif, EmojiFont; color: rgb(18, 18, 18); letter-spacing: 0.05pt; background: white;line-height:21px;">
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>今日提及東亞銀行的全網內容，主要為正面及中性報道，無敏感信息，輿情健康度為{{health}}；<br />
+   <!--      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>今日提及東亞銀行的全網內容，共計{{pos}}條正面及中性報道（<a href="#beanews">點此查閱</a>），無敏感信息，輿情健康度為{{health}}；<br />-->
+
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>值得關註的重點新聞是：<a style="font-size:11.5pt; color:#153EB3;line-height:21px;" href="https://bea-daily-newsletter.jacklearn.tech/bea/view/{{date}}-trad#bank1">{{{pick}}}</a>；<br />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>整體金融行業或外資銀行業今日關鍵詞是：{{{bank_keyword}}}。
+      </div>
+<div style="width:100%;height:3px;"><table><tr><td height="3"></td></tr></table></div>
+    </td>
+  </tr>
+  <!--每日AI智腦 -->
+  <tr>
+    <td>
+
+      <div
+        style="background-color:#E6EDEA;font-size:20px;color:#3B815C;font-family:Noto Sans SC, 微軟雅黑, serif, EmojiFont;font-weight:bold;line-height:40px;"><span>&nbsp;&nbsp;</span>💬 每日AI智腦</div><div style="width:100%;height:3px;"><table><tr><td height="3"></td></tr></table></div>
+      <div style="font-size:16px;color:#3B815C;font-family:Noto Sans SC, 微軟雅黑, serif, EmojiFont;line-height:19px;border:2px solid #3B815C;border-radius:10px;margin:10px;padding:10px;">
+       問：{{ai_ask}}<br />AI：{{ai_answer}}</div>
+      
+
+
+    </td>
+  </tr>
+  <tr>
+    <td>
+       <div
+        style="background-color:#E6EDEA;font-size:20px;color:#3B815C;font-family:Noto Sans SC, 微軟雅黑, serif, EmojiFont;font-weight:bold;line-height:40px;"><span>&nbsp;&nbsp;</span>📄 目錄</div>
+     
+<a id="beanews"></a>
+      {{#each contents}}
+       {{#if this.articles}} <span style="font-weight:bold;font-size: 13pt;font-family:Noto Sans SC, 微軟雅黑, serif, EmojiFont;color: rgb(51, 51, 51); letter-spacing: 0.05pt; background: white;"><span>&nbsp;&nbsp;</span>{{this.category_name}}</span><br />{{else}}{{/if}}
+      {{#each this.articles}}
+      <div>
+        <span>&nbsp;&nbsp;</span> <span><a style="font-size:11.5pt; color:#153EB3;line-height:24px;" href="https://bea-daily-newsletter.jacklearn.tech/bea/view/{{date}}-trad#{{this.type}}">{{this.id}}. {{{this.title}}}</a></span><br />
+
+      </div>
+      {{else}}
+      {{/each}}
+      {{else}}
+      {{/each}}
+ <span style="font-size: 11.5pt; font-family:Noto Sans SC, 微軟雅黑, serif, EmojiFont;color: rgb(51, 51, 51); letter-spacing: 0.05pt; background: white;line-height:24px;"><br/>請點擊目錄標題查看文章內容</span>
+    </td>
+  </tr>
+
+ 
+
+</table>
