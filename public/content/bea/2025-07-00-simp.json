@@ -1,0 +1,21 @@
+{
+		"date": "2025-07-11",
+    	"day": "星期五",
+		"contents": [
+			{
+				"category_name": "东亚银行",
+				"category_id": "bea_news",
+				"articles": []
+			},
+			{
+				"category_name": "银行业动态",
+				"category_id": "bank_news",
+				"articles":[]
+			},
+			{
+				"category_name": "银行业竞争对手",
+				"category_id": "competitor_news",
+				"articles":[]
+      }
+		]
+	}
